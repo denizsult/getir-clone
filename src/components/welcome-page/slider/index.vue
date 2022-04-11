@@ -114,7 +114,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade } from 'swiper';
 import 'swiper/css/bundle'
 import 'swiper/css/autoplay'
-import { watch, ref, Ref, defineEmits } from 'vue'
+import { watch, ref, Ref } from 'vue'
 import { sliderImages } from '../../../dummy'
 
 const modules = [Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade];
@@ -233,4 +233,4 @@ const login = () => {
 .select-dropdown {
     padding-left: 10px;
 }
-</style>
+</style>    

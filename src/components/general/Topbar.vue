@@ -1,8 +1,5 @@
 <template>
-    <div class="w-screen static h-12 bg-topBar flex xl:px-60 p-0">
-      
-      
-      
+    <div class="w-full static h-12 bg-topBar flex xl:px-60 p-0 overflow-hidden">
         <div class="lg:w-1/2 w-full flex justify-center items-center">
             <div
                 class="flex lg:justify-center justify-start w-full h-full section-1 color-brandYellow lg:text-[16px] md:text-[16px] text-[12px]"
@@ -25,7 +22,9 @@
                 </div>
             </div>
         </div>
-        <div class="lg:w-1/2 md:flex hidden flex justify-center items-center color-white top-right">
+        <div
+            class="lg:w-1/2  w-2/4 md:flex hidden flex lg:justify-center justify-evenly items-center color-white top-right"
+        >
             <div class="flex justify-center items-center">
                 <!-- svg from assets file -->
                 <svg
@@ -41,7 +40,7 @@
                     />
                 </svg>
 
-                <a href="#">Türkçe (TR)</a>
+                <a class="lg:block hidden" href="#">Türkçe (TR)</a>
             </div>
             <div class="flex justify-center items-center ml-2">
                 <svg
@@ -56,7 +55,7 @@
                         class="style__Path-sc-__sc-hqksj3-2 kqvXtw svg"
                     />
                 </svg>
-                <a href="#">Giriş Yap</a>
+                <a class="lg:block hidden" href="#">Giriş Yap</a>
             </div>
             <div class="flex justify-center items-center ml-2">
                 <svg
@@ -71,7 +70,7 @@
                         class="style__Path-sc-__sc-hqksj3-2 kqvXtw svg"
                     />
                 </svg>
-                <a href="#">Kayıt Ol</a>
+                <a class="xl:block lg:block hidden" href="#">Kayıt Ol</a>
             </div>
         </div>
     </div>

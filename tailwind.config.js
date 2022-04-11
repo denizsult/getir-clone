@@ -9,8 +9,8 @@ module.exports = {
       'sm': '375px',
       // => @media (min-width: 640px) { ... }
 
-      'md': '640px',
-      // => @media (min-width: 768px) { ... }
+      'md': '730px',
+      // => @media (min-width: 968px) { ... }
 
       'lg': '1024px',
       // => @media (min-width: 1024px) { ... }
@@ -42,7 +42,10 @@ module.exports = {
         primarySmoothBg: 'rgb(93, 62, 188, 0.2)',
         brandYellow: 'rgb(255, 211, 0)',
         topBar: 'rgb(76, 51, 152)',
-        greyDark: '#3e3e3e'
+        greyDark: '#3e3e3e',
+        bgColor: '#fafafa'
+
+        
       }
     },
   },
