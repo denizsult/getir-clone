@@ -4,14 +4,13 @@
         <div class="flex justify-evenly m-2 w-full h-[60px]">
            
            
-            <select v-model="phone_code" class="border-2 focus:border-primary w-1/6 h-14 rounded-md select-dropdown">
+            <select v-model="phone_code" class="border-2 focus:border-primary w-3/12 h-14 rounded-md select-dropdown">
                 <option v-for="(country, index) in countries" :key="index" class>
-                    
                     {{ country.code }}
                 </option>
             </select>
 
-            <div class="w-5/6 ml-4 h-[80px] relative flex flex-col justify-between">
+            <div class="w-9/12 ml-4 h-[80px] relative flex flex-col justify-between">
                 <input v-model="phone" @focusout="check"
                     :class="'border-2 phone-input outline-[#5d3ebc] pt-[7px] pl-4 h-14 rounded-md ' + (!isValid ? ' border-red-400 outline-red-400' : '')"
                     maxlength="10" type="text" />

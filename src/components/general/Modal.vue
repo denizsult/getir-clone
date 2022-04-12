@@ -1,7 +1,7 @@
 <template>
     <div class="w-screen h-screen absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center  z-40">
         <div
-            class="lg:w-[420px] lg:h-[380px] sm:w-full sm:h-full border rounded-lg shadow-sm  flex flex-col lg:justify-between sm:justify-between items-center bg-white">
+            class="lg:w-[420px] lg:h-[380px] sm:w-full sm:h-full border lg:rounded-lg shadow-sm  flex flex-col lg:justify-between sm:justify-between items-center bg-white">
             <div class="flex flex-col items-center h-72 justify-around w-full">
                 <div class="flex w-full justify-between items-center px-4 pt-4 ">
                     <svg @click="closeModal" data-testid="icon" name="chevron-left" size="10" color="currentColor"

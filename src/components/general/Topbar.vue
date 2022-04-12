@@ -22,6 +22,7 @@
                 </div>
             </div>
         </div>
+
         <div
             class="lg:w-1/2  w-2/4 md:flex hidden flex lg:justify-center justify-evenly items-center color-white top-right"
         >

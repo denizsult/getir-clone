@@ -235,7 +235,7 @@
             </div>
             <hr class="w-full" />
 
-            <div class="flex lg:flex-row sm:flex-col justify-between items-center h-full w-full">
+            <div class="flex lg:flex-row sm:flex-col mt-2 justify-between items-center h-full w-full">
                 <div class="m-4 text-[12px]">
                     © 2022 Getir
                     <span class="text-primary cursor-pointer">

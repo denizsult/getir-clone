@@ -4,11 +4,12 @@ import {
 } from 'vue-router'
 
 import Welcome from "../views/welcomePage.vue";
+import MainPage from "../views/MainPage.vue"
 
 const routes = [{
     path: "/",
     name: "welcome",
-    component: Welcome
+    component: MainPage
 }];
 
 const router = createRouter({
