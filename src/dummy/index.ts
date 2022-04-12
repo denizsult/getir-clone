@@ -206,7 +206,7 @@ export const cards = [
 ]
 
 
-export const sliderImages = ['../../src/assets/images/slider/slider-1.jpg', '../../src/assets/images/slider/slider-2.jpg', '../../src/assets/images/slider/slider-3.jpg']
+export const sliderImages = [' assets/slider/slider-1.jpg', ' assets/slider/slider-2.jpg', ' assets/slider/slider-3.jpg']
 
 export const mobileSliderImages = [
 
@@ -219,5 +219,5 @@ export const mobileSliderImages = [
 ]
 
 
- 
+
 export const stores = ['https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg', 'https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg', 'https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg']
