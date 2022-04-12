@@ -2,7 +2,7 @@
     <div class="w-full static h-12 bg-topBar flex xl:px-60 p-0 overflow-hidden">
         <div class="lg:w-1/2 w-full flex justify-center items-center">
             <div
-                class="flex lg:justify-center justify-start w-full h-full section-1 color-brandYellow lg:text-[16px] md:text-[16px] text-[12px]"
+                class="flex lg:justify-center justify-start w-full h-full section-1 color-brandYellow lg:text-[16px] md:text-[16px] text-[13px]"
             >
                 <div class="active p-4">
                     <a class="text-brandYellow" href="#">getir</a>

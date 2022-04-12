@@ -3,7 +3,7 @@
         <div
             class="lg:w-[420px] lg:h-[380px] sm:w-full sm:h-full border rounded-lg shadow-sm  flex flex-col lg:justify-between sm:justify-between items-center bg-white">
             <div class="flex flex-col items-center h-72 justify-around w-full">
-                <div class="flex w-full justify-between items-center px-2 pt-4 ">
+                <div class="flex w-full justify-between items-center px-4 pt-4 ">
                     <svg @click="closeModal" data-testid="icon" name="chevron-left" size="10" color="currentColor"
                         version="1.1" xmlns="http://www.w3.org/2000/svg" style="width: 10px;" viewBox="0 0 32 32"
                         class="style__Icon-sc-__sc-hqksj3-1 doIGoy cursor-pointer">
@@ -28,20 +28,20 @@
                 </div>
 
                 <div class="flex flex-col justify-evenly h-full w-full  text-[13px]  text-center text-gray-500">
-                    <div class="text-[16px] font-thinner word-break ">
+                    <div class="text-[15px] font-thinner  px-8   ">
                         Lütfen {{phone}} numaralı
                         telefonuna
-                        gönderilen tek <br> kullanımlık şifreyi gir
+                        gönderilen tek  kullanımlık şifreyi gir
 
                     </div>
 
                     <div class="w-full px-8">
                         <input type="text"
-                            class="rounded-md border focus:outline-primary hover:border-primary w-full h-12" />
+                            class="rounded-md border pl-4 focus:outline-primary hover:border-primary w-full h-14" />
                     </div>
                     <div class="w-full px-8">
                         <button
-                            class="w-full bg-primarySmooth h-10 rounded-lg text-white text-[13px] hover:bg-[#7849f7]">Onayla
+                            class="w-full bg-primarySmooth h-14 rounded-lg text-white text-[13px] hover:bg-[#7849f7]">Onayla
                             ve giriş yap</button>
                     </div>
 

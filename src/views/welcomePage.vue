@@ -17,6 +17,9 @@
         <section id="Mobile-Slider" class="block lg:hidden md:hidden">
             <MobileSlider />
         </section>
+        <section id="Mobile-Login" class="block lg:hidden md:hidden">
+            <MobileLogin @login="modalShow(), setPhone($event)" />
+        </section>
 
         <section id="wrapper"
             class="w-max-[1139px] sm:w-full m-auto flex flex-col justify-center items-center bg-bgColor">
@@ -38,6 +41,7 @@
 import Topbar from '../components/general/Topbar.vue'
 import Slider from '../components/welcome-page/slider/index.vue'
 import MobileSlider from '../components/welcome-page/mobile-slider/index.vue'
+import MobileLogin from '../components/welcome-page/mobile-login/index.vue'
 import Categories from '../components/welcome-page/categories/index.vue'
 import Campaigns from '../components/welcome-page/campaigns/index.vue'
 import Favorites from '../components/welcome-page/favorites/index.vue'
@@ -64,7 +68,7 @@ let phone: Ref<string> = ref('');
 
 const setPhone = (data: phone) => {
     phone.value = data.phone;
-   
+
 }
 
 const modalShow = () => {

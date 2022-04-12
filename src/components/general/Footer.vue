@@ -1,10 +1,9 @@
 <template>
     <div class="w-full h-full bg-white  flex justify-center items-center">
-        <div class="flex flex-col lg:w-[70%] w-full h-full">
+        <div class="flex flex-col  relative lg:left-8 lg:w-[70%] w-full h-full">
 
 
-            <div
-                class="h-full w-full flex lg:flex-row sm:flex-col justify-between relative lg:left-8 items-start pb-2  sm:pl-4">
+            <div class="h-full w-full flex lg:flex-row sm:flex-col justify-between items-start pb-6  sm:pl-4">
 
                 <div class="flex flex-col lg:w-1/5 sm:w-full h-full mt-10">
                     <div class="text-[20px] text-primary">Getir'i indirin!</div>
@@ -14,179 +13,225 @@
 
 
 
-                <div class="flex flex-col text-[15px] text-greyDark lg:w-1/5 sm:w-full h-full mt-10">
+                <!-- Mobile Footer -->
 
-                    <div @click="card = 'explore-collapse-footer', cardButton = 'explore-collapse-icon', showCollapse()"
-                        class="text-primary text-[20px] flex justify-between cursor-pointer items-start">
-                        Getir'i Keşfedin
-                        <div
-                            class="mr-3 rounded-xl flex items-center justify-center text-center  bg-primarySmoothBg w-8 h-8 lg:hidden  ">
 
-                            <svg id="explore-collapse-icon" data-testid="icon" name="chevron-down" size="10"
-                                color="#5d3ebc" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32 "
-                                class="style__Icon-sc-__sc-hqksj3-1 doIGoy  w-1/3 h-1/3 rotate-180  transition-all">
-                                <path
-                                    d="M28.084 7.516l-12.096 12.119-12.096-12.096c-0.892-0.892-2.332-0.892-3.224 0s-0.892 2.332 0 3.224l13.719 13.719c0.892 0.892 2.332 0.892 3.224 0l13.719-13.719c0.892-0.892 0.892-2.332 0-3.224-0.892-0.915-2.355-0.915-3.247-0.023z"
-                                    class="style__Path-sc-__sc-hqksj3-2 kqvXtw"></path>
-                            </svg>
+                <div id="mobile-footer" class="lg:hidden block w-full">
+                    <div class="flex flex-col text-[15px] text-greyDark lg:w-1/5 sm:w-full h-full mt-10">
 
+                        <div @click="card = 'explore-collapse-footer', cardButton = 'explore-collapse-icon', showCollapse()"
+                            class="text-primary text-[20px] flex justify-between cursor-pointer items-start">
+                            Getir'i Keşfedin
+                            <div
+                                class="mr-3 rounded-xl flex items-center justify-center text-center  bg-primarySmoothBg w-8 h-8 lg:hidden  ">
+
+                                <svg id="explore-collapse-icon" data-testid="icon" name="chevron-down" size="10"
+                                    color="#5d3ebc" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32 "
+                                    class="style__Icon-sc-__sc-hqksj3-1 doIGoy  w-1/3 h-1/3 rotate-180  transition-all">
+                                    <path
+                                        d="M28.084 7.516l-12.096 12.119-12.096-12.096c-0.892-0.892-2.332-0.892-3.224 0s-0.892 2.332 0 3.224l13.719 13.719c0.892 0.892 2.332 0.892 3.224 0l13.719-13.719c0.892-0.892 0.892-2.332 0-3.224-0.892-0.915-2.355-0.915-3.247-0.023z"
+                                        class="style__Path-sc-__sc-hqksj3-2 kqvXtw"></path>
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+                        <div id="explore-collapse-footer">
+                            <div class="mt-4">
+                                <a href="#">Hakkımızda</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">Kariyer</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">Teknoloji Kariyerleri</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">İletişim</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">COVID-19 Duyuru</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">Sosyal Sorumluluk Projeleri</a>
+                            </div>
                         </div>
 
                     </div>
 
-                    <div id="explore-collapse-footer" class="lg:hidden block transition-all 	 ">
-                        <div class="mt-4">
-                            <a href="#">Hakkımızda</a>
+                    <div @click="card = 'help-collapse-footer', cardButton = 'help-collapse-icon', showCollapse()"
+                        class="flex flex-col  text-[15px] text-greyDark lg:w-1/5 sm:w-full h-full mt-10">
+                        <div class="text-primary text-[20px] flex justify-between cursor-pointer items-start">Yardıma mı
+                            ihtiyacınız var?
+                            <div
+                                class="mr-3 rounded-xl flex items-center justify-center text-center  bg-primarySmoothBg w-8 h-8 lg:hidden  ">
+
+                                <svg id="help-collapse-icon" data-testid="icon" name="chevron-down" size="10"
+                                    color="#5d3ebc" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32 "
+                                    class="style__Icon-sc-__sc-hqksj3-1 doIGoy  w-1/3 h-1/3  transition-all">
+                                    <path
+                                        d="M28.084 7.516l-12.096 12.119-12.096-12.096c-0.892-0.892-2.332-0.892-3.224 0s-0.892 2.332 0 3.224l13.719 13.719c0.892 0.892 2.332 0.892 3.224 0l13.719-13.719c0.892-0.892 0.892-2.332 0-3.224-0.892-0.915-2.355-0.915-3.247-0.023z"
+                                        class="style__Path-sc-__sc-hqksj3-2 kqvXtw"></path>
+                                </svg>
+
+                            </div>
                         </div>
-                        <div class="mt-4">
-                            <a href="#">Kariyer</a>
+
+                        <div id="help-collapse-footer" class="hidden  transition-all">
+
+                            <div class="mt-4">
+                                <a href="#">Sıkça Sorulan Sorular</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">Kişisel Verilerin Korunması</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">Gizlilik Politikası</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">Kullanım Koşulları</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">Çerez Politikası</a>
+                            </div>
                         </div>
-                        <div class="mt-4">
-                            <a href="#">Teknoloji Kariyerleri</a>
+
+
+                    </div>
+
+
+                    <div @click="card = 'partner-collapse-footer', cardButton = 'partner-collapse-icon', showCollapse()"
+                        class="flex flex-col text-[15px] text-greyDark  lg:w-1/5 sm:w-full h-full mt-10">
+                        <div class="text-primary text-[20px] flex justify-between cursor-pointer items-start">İş
+                            Ortağımız
+                            Olun
+                            <div
+                                class="mr-3 rounded-xl flex items-center justify-center text-center  bg-primarySmoothBg w-8 h-8 lg:hidden  ">
+
+                                <svg id="partner-collapse-icon" data-testid="icon" name="chevron-down" size="10"
+                                    color="#5d3ebc" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32 "
+                                    class="style__Icon-sc-__sc-hqksj3-1 doIGoy  w-1/3 h-1/3  transition-all">
+                                    <path
+                                        d="M28.084 7.516l-12.096 12.119-12.096-12.096c-0.892-0.892-2.332-0.892-3.224 0s-0.892 2.332 0 3.224l13.719 13.719c0.892 0.892 2.332 0.892 3.224 0l13.719-13.719c0.892-0.892 0.892-2.332 0-3.224-0.892-0.915-2.355-0.915-3.247-0.023z"
+                                        class="style__Path-sc-__sc-hqksj3-2 kqvXtw"></path>
+                                </svg>
+
+                            </div>
                         </div>
-                        <div class="mt-4">
-                            <a href="#">İletişim</a>
+
+                        <div id="partner-collapse-footer" class=" hidden  transition-all">
+
+                            <div class="text-[16px] text-greyDark mt-4">
+                                <a href="#">Bayimiz Olun</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">Deponuzu Kiralayın</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">GetirYemek Restoranı Olun</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">GetirÇarşı İşletmesi Olun</a>
+                            </div>
                         </div>
-                        <div class="mt-4">
-                            <a href="#">COVID-19 Duyuru</a>
+
+                    </div>
+
+                </div>
+
+                <!-- Mobile Footer End -->
+                <!-- Desktop Footer -->
+                <div class="lg:flex justify-around items-start hidden w-full">
+                    <div class="flex flex-col text-[15px] text-greyDark lg:w-1/5 sm:w-full h-full mt-10 lg:flex hidden">
+
+                        <div class="text-primary text-[20px] flex justify-between cursor-pointer items-start">
+                            Getir'i Keşfedin
+                            
+
                         </div>
-                        <div class="mt-4">
-                            <a href="#">Sosyal Sorumluluk Projeleri</a>
+
+
+                        <div class="lg:block hidden ">
+                            <div class="mt-4">
+                                <a href="#">Hakkımızda</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">Kariyer</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">Teknoloji Kariyerleri</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">İletişim</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">COVID-19 Duyuru</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">Sosyal Sorumluluk Projeleri</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col  text-[15px] text-greyDark lg:w-1/5 sm:w-full h-full mt-10">
+                        <div class="text-primary text-[20px] flex justify-between cursor-pointer items-start">Yardıma mı
+                            ihtiyacınız var?
+                           
+                        </div>
+
+
+
+                        <div class="lg:block hidden  transition-all">
+
+                            <div class="mt-4">
+                                <a href="#">Sıkça Sorulan Sorular</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">Kişisel Verilerin Korunması</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">Gizlilik Politikası</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">Kullanım Koşulları</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">Çerez Politikası</a>
+                            </div>
                         </div>
                     </div>
 
 
+                    <div class="flex flex-col text-[15px] text-greyDark  lg:w-1/5 sm:w-full h-full mt-10">
+                        <div class="text-primary text-[20px] flex justify-between cursor-pointer items-start">İş
+                            Ortağımız
+                            Olun
+
+                        </div>
 
 
-                    <div class="lg:block hidden 	 ">
-                        <div class="mt-4">
-                            <a href="#">Hakkımızda</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">Kariyer</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">Teknoloji Kariyerleri</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">İletişim</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">COVID-19 Duyuru</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">Sosyal Sorumluluk Projeleri</a>
+                        <div class=" lg:block hidden transition-all">
+
+                            <div class="text-[16px] text-greyDark mt-4">
+                                <a href="#">Bayimiz Olun</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">Deponuzu Kiralayın</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">GetirYemek Restoranı Olun</a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#">GetirÇarşı İşletmesi Olun</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div @click="card = 'help-collapse-footer', cardButton = 'help-collapse-icon', showCollapse()"
-                    class="flex flex-col  text-[15px] text-greyDark lg:w-1/5 sm:w-full h-full mt-10">
-                    <div class="text-primary text-[20px] flex justify-between cursor-pointer items-start">Yardıma mı
-                        ihtiyacınız var?
-                        <div
-                            class="mr-3 rounded-xl flex items-center justify-center text-center  bg-primarySmoothBg w-8 h-8 lg:hidden  ">
-
-                            <svg id="help-collapse-icon" data-testid="icon" name="chevron-down" size="10"
-                                color="#5d3ebc" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32 "
-                                class="style__Icon-sc-__sc-hqksj3-1 doIGoy  w-1/3 h-1/3  transition-all">
-                                <path
-                                    d="M28.084 7.516l-12.096 12.119-12.096-12.096c-0.892-0.892-2.332-0.892-3.224 0s-0.892 2.332 0 3.224l13.719 13.719c0.892 0.892 2.332 0.892 3.224 0l13.719-13.719c0.892-0.892 0.892-2.332 0-3.224-0.892-0.915-2.355-0.915-3.247-0.023z"
-                                    class="style__Path-sc-__sc-hqksj3-2 kqvXtw"></path>
-                            </svg>
-
-                        </div>
-                    </div>
-
-                    <div id="help-collapse-footer" class="hidden  transition-all">
-
-                        <div class="mt-4">
-                            <a href="#">Sıkça Sorulan Sorular</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">Kişisel Verilerin Korunması</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">Gizlilik Politikası</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">Kullanım Koşulları</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">Çerez Politikası</a>
-                        </div>
-                    </div>
-
-                    <div class="lg:block hidden  transition-all">
-
-                        <div class="mt-4">
-                            <a href="#">Sıkça Sorulan Sorular</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">Kişisel Verilerin Korunması</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">Gizlilik Politikası</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">Kullanım Koşulları</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">Çerez Politikası</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div @click="card = 'partner-collapse-footer', cardButton = 'partner-collapse-icon', showCollapse()"
-                    class="flex flex-col text-[15px] text-greyDark  lg:w-1/5 sm:w-full h-full mt-10">
-                    <div class="text-primary text-[20px] flex justify-between cursor-pointer items-start">İş Ortağımız
-                        Olun
-                        <div
-                            class="mr-3 rounded-xl flex items-center justify-center text-center  bg-primarySmoothBg w-8 h-8 lg:hidden  ">
-
-                            <svg id="partner-collapse-icon" data-testid="icon" name="chevron-down" size="10"
-                                color="#5d3ebc" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32 "
-                                class="style__Icon-sc-__sc-hqksj3-1 doIGoy  w-1/3 h-1/3  transition-all">
-                                <path
-                                    d="M28.084 7.516l-12.096 12.119-12.096-12.096c-0.892-0.892-2.332-0.892-3.224 0s-0.892 2.332 0 3.224l13.719 13.719c0.892 0.892 2.332 0.892 3.224 0l13.719-13.719c0.892-0.892 0.892-2.332 0-3.224-0.892-0.915-2.355-0.915-3.247-0.023z"
-                                    class="style__Path-sc-__sc-hqksj3-2 kqvXtw"></path>
-                            </svg>
-
-                        </div>
-                    </div>
-
-                    <div id="partner-collapse-footer" class=" hidden  transition-all">
-
-                        <div class="text-[16px] text-greyDark mt-4">
-                            <a href="#">Bayimiz Olun</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">Deponuzu Kiralayın</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">GetirYemek Restoranı Olun</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">GetirÇarşı İşletmesi Olun</a>
-                        </div>
-                    </div>
-                    <div class=" lg:block hidden transition-all">
-
-                        <div class="text-[16px] text-greyDark mt-4">
-                            <a href="#">Bayimiz Olun</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">Deponuzu Kiralayın</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">GetirYemek Restoranı Olun</a>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#">GetirÇarşı İşletmesi Olun</a>
-                        </div>
-                    </div>
-                </div>
             </div>
             <hr class="w-full" />
 
@@ -201,8 +246,14 @@
                 <div class="flex m-4 right-section">
                     <div class="social-svg">
 
-                        <svg data-testid="icon"  style="width: 20px;" name="facebook" size="20" color="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="style__Icon-sc-__sc-hqksj3-1 jqennC"><path d="M32 16.097c0-8.838-7.163-16-16-16s-16 7.162-16 16c0 7.987 5.85 14.606 13.5 15.806v-11.181h-4.063v-4.625h4.063v-3.525c0-4.009 2.387-6.225 6.044-6.225 1.75 0 3.581 0.313 3.581 0.313v3.938h-2.019c-1.987 0-2.606 1.234-2.606 2.5v3h4.437l-0.709 4.625h-3.728v11.181c7.65-1.2 13.5-7.819 13.5-15.806z" class="style__Path-sc-__sc-hqksj3-2 kqvXtw social-icon"></path></svg>
-                         
+                        <svg data-testid="icon" style="width: 20px;" name="facebook" size="20" color="currentColor"
+                            version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                            class="style__Icon-sc-__sc-hqksj3-1 jqennC">
+                            <path
+                                d="M32 16.097c0-8.838-7.163-16-16-16s-16 7.162-16 16c0 7.987 5.85 14.606 13.5 15.806v-11.181h-4.063v-4.625h4.063v-3.525c0-4.009 2.387-6.225 6.044-6.225 1.75 0 3.581 0.313 3.581 0.313v3.938h-2.019c-1.987 0-2.606 1.234-2.606 2.5v3h4.437l-0.709 4.625h-3.728v11.181c7.65-1.2 13.5-7.819 13.5-15.806z"
+                                class="style__Path-sc-__sc-hqksj3-2 kqvXtw social-icon"></path>
+                        </svg>
+
                     </div>
                     <div class="social-svg">
                         <svg data-testid="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
@@ -248,8 +299,8 @@ const showCollapse = () => {
     let el: HTMLElement = document.querySelector(`#${card.value}`)!;
     let button: HTMLElement = document.querySelector(`#${cardButton.value}`)!;
     let elementDisplay = window.getComputedStyle(el).display;
-    
- 
+
+
     if (elementDisplay === 'none') {
         el.style.display = 'block'; button.style.transform = 'rotate(180deg)';
         return;
