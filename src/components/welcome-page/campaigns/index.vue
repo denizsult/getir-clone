@@ -3,7 +3,7 @@
         <div class="xl:max-w-[1350px] w-full flex flex-col justify-center items-start ">
             <h6
                 class="lg:ml-[50px] relative md:ml-8 sm:ml-4 text-[#191919] font-semibold text-[16px] line-height-[19px]"
-            >Kategoriler</h6>
+            >Kampanyalar</h6>
 
             <div class="flex justify-center relative lg:left-10 items-center xl:w-full w-screen overflow-hidden ">
                 <div

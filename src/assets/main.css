@@ -6,7 +6,7 @@ w
 body{
     overflow-x: hidden;
     background-color: #fafafa;
-    user-select: none;
+    user-select: none !important;
 }
 
 :root {
